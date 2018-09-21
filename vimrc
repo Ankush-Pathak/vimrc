@@ -1,7 +1,7 @@
 set tabstop=4
 set cindent
 set number
-
+set ruler
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
