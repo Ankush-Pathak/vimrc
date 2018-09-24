@@ -2,6 +2,7 @@ set tabstop=4
 set cindent
 set number
 set ruler
+source $VIMRUNTIME/vimrc_example.vim
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
