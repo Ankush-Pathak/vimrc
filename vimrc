@@ -14,15 +14,15 @@ call vundle#begin()
 "
 " " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'ervandew/supertab'
+" Plugin 'ervandew/supertab'
 
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
-Plugin 'vim-airline/vim-airline'
 " Optional:
 Plugin 'honza/vim-snippets'
 
+Plugin 'Valloric/YouCompleteMe'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
@@ -38,4 +38,20 @@ set hidden
 " just hit backspace without this one and
 " see for yourself
 set backspace=indent,eol,start
-
+set spelllang=en
+set spellfile=~/.vimspell.en.utf-8.add
+" set spell
+set mouse=
+set encoding=utf-8
+set laststatus=2
+set statusline=
+set statusline+=[%{winnr()}]
+" set statusline+=%<\                       " cut at start
+set statusline+=%2*[%H%M%R%W]%*\        	" flags and buf no
+set statusline+=%f\                    		" path
+" set statusline+=%=%1*%y%*%*\              " file type
+set statusline+=%((%c)%)\            " line and column
+set statusline +=%5l%*             "current line
+set statusline +=%*/%L%*               "total lines
+" set nowrap
+colorscheme desert
