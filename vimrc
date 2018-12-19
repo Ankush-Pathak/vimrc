@@ -1,26 +1,31 @@
-set tabstop=4
-set cindent
-set number
+set clipboard=unnamed,unnamedplus "Requires X server on linux, and XMing on windows if using Putty or ssh
+set tabstop=2
+set autoindent
+" set number
 set ruler
 source $VIMRUNTIME/vimrc_example.vim
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=/home/ankush_pathak/.vim/bundle/Vundle.vim
+" set rtp+=/home/ankush_pathak/.vim/plugins
 call vundle#begin()
 " " alternatively, pass a path where Vundle should install plugins
 " "call vundle#begin('~/some/path/here')
 "
 " " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'craigemery/vim-autotag'
+" Plugin 'christoomey/vim-system-copy'
+" Plugin 'ronakg/quickr-cscope.vim'
 " Plugin 'ervandew/supertab'
 
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
-Plugin 'garbas/vim-snipmate'
+" Plugin 'MarcWeber/vim-addon-mw-utils'
+" Plugin 'tomtom/tlib_vim'
+" Plugin 'garbas/vim-snipmate'
 " Optional:
-Plugin 'honza/vim-snippets'
+" Plugin 'honza/vim-snippets'
 
 Plugin 'Valloric/YouCompleteMe'
 call vundle#end()            " required
