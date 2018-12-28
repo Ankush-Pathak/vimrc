@@ -1,6 +1,7 @@
 set clipboard=unnamed,unnamedplus "Requires X server on linux, and XMing on windows if using Putty or ssh
 set tabstop=2
 set autoindent
+set ignorecase
 set smartcase
 " set number
 set ruler
